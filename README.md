@@ -11,34 +11,39 @@ These steps take about 6 hours on a system with 8 processors and an NVIDIA
 Titan X GPU. **Tested only on Ubuntu**.
 
 1. Download and install neon
-```
+
+    ```
     git clone https://github.com/NervanaSystems/neon.git
     cd neon
     git checkout e479ce3
     make
     source .venv/bin/activate
-```
+    ```
 2. Install prerequisites
-```
+
+    ```
     pip install scipy scikit-image
-```
+    ```
 3. Download the following files from [Kaggle](https://kaggle.com/c/noaa-right-whale-recognition/data):
-```
+
+    ```
     imgs.zip
     train.csv
     w_7489.jpg
     sample_submission.csv
-```
-Save these to a directory that we will refer to as /path/to/data.
+    ```
+    Save these to a directory that we will refer to as /path/to/data.
 4. Clone this repository
-```
+
+    ```
     git clone https://github.com/anlthms/whale-2015.git
     cd whale-2015
-```
+    ```
 5. Train models and generate predictions
-```
+
+    ```
     ./run.sh /path/to/data
-```
+    ```
 6. Evaluate predictions
 
     Submit subm.csv.gz to [Kaggle](https://kaggle.com/c/noaa-right-whale-recognition/submissions/attach)
