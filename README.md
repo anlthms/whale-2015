@@ -15,7 +15,7 @@ Titan X GPU. **Tested only on Ubuntu**.
     ```
     git clone https://github.com/NervanaSystems/neon.git
     cd neon
-    git checkout e479ce3
+    git checkout 093b64d
     make
     source .venv/bin/activate
     ```
