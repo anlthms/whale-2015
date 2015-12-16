@@ -24,6 +24,8 @@ import struct
 from glob import glob
 from multiprocessing import Pool
 from PIL import Image as Image
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 from neon.util.compat import range, StringIO
 from neon.util.persist import save_obj
 from neon.util.argparser import NeonArgparser

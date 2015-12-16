@@ -66,5 +66,5 @@ echo Writing macrobatches: `date`
 python batch_writer.py --image_dir=$data_dir/testcrops --data_dir=$data_dir/macrotestcrops --id_label 1 --target_size $imwidth --val_pct 100
 
 echo Classifying: `date`
-./classifier.py -z32 -e 60 -w $data_dir/macrotraincrops -tw $data_dir/macrotestcrops -r0 -s model3.pkl -bgpu --serialize 1 ${@:2}
+./classifier.py -z32 -e 60 -w $data_dir/macrotraincrops -tw $data_dir/macrotestcrops -r0 -s model3.pkl -bgpu -iw $imwidth --serialize 1 ${@:2}
 echo Done: `date`
