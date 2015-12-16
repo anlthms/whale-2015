@@ -10,12 +10,12 @@ Right Whale Recognition
 These steps take about 6 hours on a system with 8 processors and an NVIDIA
 Titan X GPU. **Tested only on Ubuntu**.
 
-1. Download and install neon
+1. Download and install neon 1.1.4
 
     ```
     git clone https://github.com/NervanaSystems/neon.git
     cd neon
-    git checkout e479ce3
+    git checkout e09fc11
     make
     source .venv/bin/activate
     ```
